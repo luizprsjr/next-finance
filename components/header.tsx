@@ -3,6 +3,7 @@ import { UserButton, ClerkLoading, ClerkLoaded } from "@clerk/nextjs"
 
 import { HeaderLogo } from "@/components/header-logo"
 import { Navigation } from "@/components/navigation"
+import { WelcomeMsg } from "@/components/welcome-msg"
 
 export const Header = () => {
   return (
@@ -20,6 +21,7 @@ export const Header = () => {
             <Loader2 className="size-8 animate-spin text-slate-400" />
           </ClerkLoading>
         </div>
+        <WelcomeMsg />
       </div>
     </header>
   )
